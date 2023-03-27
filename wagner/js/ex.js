@@ -1,6 +1,6 @@
 let num = 1
-let num2 = 1
-let num3
+let num2 = 0
+let num3 = 0
 
 for (i=0; i<=20; i++) {
     num3 = num + num2
