@@ -1,10 +1,10 @@
-let num = 1
-let num2 = 0
-let num3 = 0
+let num 
 
-for (i=0; i<=20; i++) {
-    num3 = num + num2
-    num = num2
-    num2 = num3
-    document.write(num3 + "<br>")
+for (i=0; i<=100; i++) {
+    if (num % 2) {
+        document.write("Par")
+    }
+    else {
+        document.write("ímpar")
+    }
 }
