@@ -2,9 +2,10 @@ let num = 0
 
 for (i=0; i<=100; i++) {
     if (num % 2 == 0) {
-        document.write("Par" + "<br>")
+        num = num * i
+        alert("Número" + num + "par<br>")
     }
     else {
-        document.write("ímpar")
+        alert("ímpar")
     }
 }
