@@ -1,12 +1,37 @@
+let qtdHomens = 0;
+let qtdMulheres = 0;
+let canhoto_destro = 0;
 
-for (i=0; i<=5; i++){
-    let info = parseFloat(prompt("qual seu sexo? "));
-    let alt = parseFloat(prompt("qual sua altura? "));
-    let mao = parseFloat(prompt("você é canhoto ou destro? "));
-    if (info == "homem") {
-        document.write("você é homem.<br>")
-    }
-        if (info == "mulher") {
-            document.write("você é mulher.<br>")
-        }
+for (let i = 1; i <= 5; i++) {
+  let altura = parseFloat(prompt("Digite a altura da pessoa " + i + " (em metros):"));
+  let peso = parseFloat(prompt("Digite o peso da pessoa " + i + " (em quilos):"));
+  let sexo = prompt("Digite o sexo da pessoa " + i + " (M ou F):");
+  let mao = prompt("Qua mão você usa para escrever?" + i)
+
+  let imc = peso / (altura ** 2);
+
+  document.write("Pessoa " + i + ": IMC = " + imc.toFixed(2));
+
+  if (sexo === "M") {
+    qtdHomens++;
+    document.write(" (masculino)<br>");
+  } else if (sexo === "F") {
+    qtdMulheres++;
+    document.write(" (feminino)<br>");
+  } else {
+    document.write(" (sexo inválido)<br>");
+  }
+
+  if (mao === "destro") {
+    canhoto_destro++;
+    document.write(" (destro)<br>");
+  } else if (mao === "canhoto") {
+    qtdMulheres++;
+    document.write(" (canhoto)<br>");
+  } else {
+    document.write(" (informação inválida)<br>");
+  }
 }
+
+document.write("<br>Quantidade de homens: " + qtdHomens + "<br>");
+document.write("Quantidade de mulheres: " + qtdMulheres + "<br>");
