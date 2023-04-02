@@ -8,3 +8,5 @@ for (i=0; i<=20; i++) {
     num2 = num3
     document.write(num3 + "<br>")
 }
+
+document.write('<br><img src="images/fibo.png" alt="fibonacci">')
