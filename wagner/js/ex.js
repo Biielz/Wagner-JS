@@ -33,5 +33,3 @@ for (let i = 1; i <= 5; i++) {
 
 document.write("<br>Quantidade de homens: " + qtdHomens + "<br>");
 document.write("Quantidade de mulheres: " + qtdMulheres + "<br>");
-document.write("A porcentagem de pessoas destras são " + destro * mao/100 + "%<br>");
-document.write("A porcentagem de pessoas canhotas são " + canhoto * mao/100 + "%");
