@@ -9,4 +9,4 @@ for (i=0; i<=20; i++) {
     document.write(num3 + "<br>")
 }
 
-document.write('<br><img src="images/fibo.png" alt="fibonacci">')
+document.write('<center><br><img src="images/fibo.png" alt="fibonacci"></center>')
