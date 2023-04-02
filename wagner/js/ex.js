@@ -6,7 +6,7 @@ for (let i = 1; i <= 5; i++) {
   let altura = parseFloat(prompt("Digite a altura da pessoa " + i + " (em metros):"));
   let peso = parseFloat(prompt("Digite o peso da pessoa " + i + " (em quilos):"));
   let sexo = prompt("Digite o sexo da pessoa " + i + " (M ou F):");
-  let mao = prompt("Qua mão você usa para escrever?" + i)
+  let mao = prompt("Digite a mão que a pessoa " + i + " usa:");
 
   let imc = peso / (altura ** 2);
 
@@ -22,10 +22,10 @@ for (let i = 1; i <= 5; i++) {
     document.write(" (sexo inválido)<br>");
   }
 
-  if (mao === "destro") {
+  if (mao === "direita") {
     canhoto_destro++;
     document.write(" (destro)<br>");
-  } else if (mao === "canhoto") {
+  } else if (mao === "esquerda") {
     qtdMulheres++;
     document.write(" (canhoto)<br>");
   } else {
