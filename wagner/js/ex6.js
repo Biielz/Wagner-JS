@@ -1,5 +1,5 @@
-let qtdHomens = 0;
-let qtdMulheres = 0;
+let Homens = 0;
+let Mulheres = 0;
 let destro = 0;
 let canhoto = 0;
 
@@ -11,10 +11,10 @@ for (let i = 1; i <= 5; i++) {
   document.write("Pessoa " + i);
 
   if (sexo === "M") {
-    qtdHomens++;
+    Homens++;
     document.write(" (masculino)<br>");
   } else if (sexo === "F") {
-    qtdMulheres++;
+    Mulheres++;
     document.write(" (feminino)<br>");
   } else {
     document.write(" (sexo inválido)<br>");
@@ -31,5 +31,5 @@ for (let i = 1; i <= 5; i++) {
   }
 }
 
-document.write("<br>Quantidade de homens: " + qtdHomens + "<br>");
-document.write("Quantidade de mulheres: " + qtdMulheres + "<br>");
+document.write("<br>Quantidade de homens: " + Homens + "<br>");
+document.write("Quantidade de mulheres: " + Mulheres + "<br>");
